@@ -1,0 +1,22 @@
+@mixin Inter($fs, $fw, $lh){
+    font-family: 'Inter', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+@mixin Merriweather($fs, $fw, $lh){
+    font-family: 'Merriweather', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+@mixin flex($fd, $jc, $ai, $gp){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gp;
+}
+
+
+    
