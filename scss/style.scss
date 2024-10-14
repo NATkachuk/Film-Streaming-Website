@@ -1,0 +1,58 @@
+@import './mixin';
+@import './vars';
+@import './reset';
+
+
+body{
+    color: $main-color;
+    background-color: $background-color;
+    .header{
+        padding: 40px 0px;
+        @include flex(row, space-around, center, 0);
+        .logo{
+            &__link{
+                text-decoration: none;
+                color: $main-color;
+                @include Merriweather(32px, 700, 40px);
+            }
+        }
+        .nav{
+            &__list{
+                @include flex(row, center, center, 30px);
+            }
+            &__item{
+                @include flex(row, center, center, 5px);
+            }
+            &__link{
+                text-decoration: none;
+                color: $nav-color;
+                @include Inter(16px, 600, 24px);
+            }
+            &__link:hover {
+                color: $main-color;
+            }
+        }
+        .reges{
+            @include flex(row, center, center, 30px);
+            &-search{
+                border-radius:8px;
+                padding: 16px;
+                border:1px solid $border-color;
+            }
+            &__button1{
+                padding: 16px 24px 16px 24px;
+                background-color: $secondary-color;
+                border-radius: 6px;
+                @include Inter(16px, 600, 24px);
+                color: $main-color;
+            }
+            &__button2{
+                padding: 16px 24px 16px 24px;
+                @include Inter(16px, 600, 24px);
+                color: $main-color;
+                border: 1px solid $secondary-color;
+                border-radius: 6px;
+            }
+        }
+    }
+}
