@@ -30,6 +30,8 @@ body{
             }
             &__link:hover {
                 color: $main-color;
+                background:#606060;
+                padding: 4px 8px;
             }
         }
         .reges{
@@ -104,14 +106,180 @@ body{
         }
         .section2{
             margin-top: 120px;
-            @include flex(column, center, center, 0);
+            @include flex(column, center, center, 40px);
             &__title{
                 @include Inter(48px, 600, 56px);
                 color: $main-color;
+                text-align: center;
+            }
+            &-nav{
+                &__list{
+                    @include flex(row, center, center, 60px);
+
+                }
+                &__item{
+                    @include flex(row, center, center, 5px);
+                }
+                &__link{
+                    text-decoration: none;
+                    color: $nav-color;
+                    @include Inter(16px, 600, 24px);
+
+                }
+                &__link:hover {
+                    color: $main-color;
+                    background:#606060;
+                    padding: 16px 64px;;
+                }
+            }
+            &-container{
+                @include flex(column, center, center, 56px);
+                .section2-box1{
+                    @include flex(row, center, flex-start, 56px);
+                }
+                .section2-card{
+                    width: 42%;
+                    @include flex(column, center, center, 56px);
+                    &__textbox{
+                        @include flex(column, center, center, 24px);
+                        &-title{
+                            @include Inter(32px, 600, 40px);
+                            text-align: center;
+                        }
+                        &-text{
+                            @include Inter(18px, 500, 26px);
+                            color: $nav-color;
+                            text-align: center;
+                            
+                        }
+                    }
+                    &__buttons{
+                        @include flex(row, center, center, 10px);
+                        &-button1{
+                            @include flex(row, center, center, 10px);
+                            padding: 16px 24px 16px 24px;
+                            background-color: $secondary-color;
+                            border-radius: 6px;
+                            @include Inter(16px, 600, 24px);
+                            color: $main-color;
+                            &-link{
+                            text-decoration: none;
+                            color: $main-color;
+                         }
+                    }
+                        &-button2{
+                            padding: 16px 24px 16px 24px;
+                            @include Inter(16px, 600, 24px);
+                            color: $main-color;
+                            border: 1px solid $secondary-color;
+                            border-radius: 6px;
+                        }
+                    }
+                    &__textbox{
+                        @include flex(column, center, center, 24px);
+                        &-title{
+                            @include Inter(32px, 600, 40px);
+                            text-align: center;
+                        }
+                        &-text{
+                            @include Inter(18px, 500, 26px);
+                            color: $nav-color;
+                            text-align: center;
+                            
+                        }
+                    }
+                    &__buttons{
+                        @include flex(row, center, center, 10px);
+                        &-button1{
+                            @include flex(row, center, center, 10px);
+                            padding: 16px 24px 16px 24px;
+                            background-color: $secondary-color;
+                            border-radius: 6px;
+                            @include Inter(16px, 600, 24px);
+                            color: $main-color;
+                            &-link{
+                            text-decoration: none;
+                            color: $main-color;
+                         }
+                    }
+                        &-button2{
+                            padding: 16px 24px 16px 24px;
+                            @include Inter(16px, 600, 24px);
+                            color: $main-color;
+                            border: 1px solid $secondary-color;
+                            border-radius: 6px;
+                        }
+                    }
+                }
+                .section2-box2{
+                    @include flex(row, center, flex-start, 56px);
+                }
+            }
+        }
+        .section3{
+            margin-top: 250px;
+            @include flex(column, center, center, 64px);
+            &-container1{
+                @include flex(row, center, flex-start, 56px);
+                &__title{
+                    @include Inter(48px, 600, 56px);
+                    color: $main-color;
+                }
+                &__box{
+                    @include flex(column, center, flex-start, 24px);
+                    &-text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        width: 78%;
+                    }
+                    &-button{
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-color;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
+                        border-radius: 6px;
+                    }
+                }
             }
             &-container2{
-                @include flex(row, center, center, 0px);
-                
+                @include flex(row, center, center, 56px);
+                &__box{
+                    @include flex(column, center, flex-start, 24px);
+                    .section3-container2__textbox{
+                        @include flex(column, center, flex-start, 24px);
+                        &-text1{
+                            @include Inter(32px, 600, 40px);
+                            color: $main-color;
+                            width: 78%;
+                        }
+                        &-text2{
+                            @include Inter(18px, 500, 26px);
+                            color: $nav-color;
+                            width: 97%;
+                        }
+                    }
+                    .section3-container2__button{
+                        @include flex(row, center, center, 10px);
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-bg-color;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
+                        border-radius: 6px;
+                    }
+                }
+
+            }
+            &-container3{
+                @include flex(row, center, center, 56px);
+                &__card{
+                    @include flex(column, center, flex-start, 24px);
+                    width: 50%;
+                    .section3-container3__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $main-color;
+                        width: 85%;
+                    }
+                }
             }
         }
     }
