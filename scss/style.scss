@@ -282,5 +282,45 @@ body{
                 }
             }
         }
+        .section4{
+            margin-top: 250px;
+            @include flex(row, center, center, 64px);
+            .section4-box{
+                &__textbox{
+                    @include flex(column, center, flex-start, 24px);
+                    &-title{
+                        @include Inter(48px, 600, 56px);
+                        color: $main-color;
+                        width:71%;
+                    }
+                    &-text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        width: 91%;
+                    }
+
+                }
+            }
+            .section4-box1{
+                @include flex(column, center, center, 48px);
+                background-color: $secondary-bg-color;
+                border-radius: 8px;
+                padding: 24px;
+                &__card{
+                    @include flex(row, center, center, 24px);
+                    &-textbox{
+                        @include flex(column, center, flex-start, 24px);
+                        &-title{
+                            @include Inter(24px, 600, 32px);
+                            color: $main-color;
+                        }
+                        &-text{
+                            @include Inter(18px, 500, 26px);
+                            color: $nav-color;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
