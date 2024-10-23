@@ -105,8 +105,8 @@ body{
             }
         }
         .section2{
-            margin-top: 120px;
-            @include flex(column, center, center, 40px);
+            padding: 120px 100px;
+            @include flex(column, flex-start, center, 40px);
             &__title{
                 @include Inter(48px, 600, 56px);
                 color: $main-color;
@@ -318,6 +318,52 @@ body{
                             @include Inter(18px, 500, 26px);
                             color: $nav-color;
                         }
+                    }
+                }
+            }
+        }
+        .section5{
+            padding-top: 250px;
+            padding-bottom: 120px;
+            @include flex(column, center, center, 40px);
+            background-image: url(../image/png/space-back.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-container{
+                @include flex(column, center, center, 40px);
+                &__textbox{
+                    @include flex(column, center, center, 24px);
+                    &-title{
+                        @include Inter(48px, 600, 56px);
+                        color: $main-color;
+                        text-align: center;
+                        width: 61%;
+                    }
+                    &-text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                        width: 51%;
+                    }
+                }
+
+                &__buttons{
+                    @include flex(row, center, center, 8px);
+                    &-inp{
+                        padding: 16px 24px 16px 24px;
+                        background-color: $border-color;
+                        border: 1px solid rgb(56, 56, 56);
+                        border-radius: 6px;
+                        @include Inter(16px, 500, 24px);
+                        color: $main-color;
+                    }
+                    &-btn{
+                        @include flex(row, center, center, 10px);
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-color;
+                        border-radius: 6px;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
                     }
                 }
             }

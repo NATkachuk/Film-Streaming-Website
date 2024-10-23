@@ -216,10 +216,10 @@ body {
             border: 1px solid #F14141;
             border-radius: 6px; }
   body .main .section2 {
-    margin-top: 120px;
+    padding: 120px 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 40px; }
     body .main .section2__title {
@@ -546,3 +546,72 @@ body {
             font-weight: 500;
             line-height: 26px;
             color: #878787; }
+  body .main .section5 {
+    padding-top: 250px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: url(../image/png/space-back.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body .main .section5-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px; }
+      body .main .section5-container__textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px; }
+        body .main .section5-container__textbox-title {
+          font-family: 'Inter', sans-serif;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 56px;
+          color: #FFFFFF;
+          text-align: center;
+          width: 61%; }
+        body .main .section5-container__textbox-text {
+          font-family: 'Inter', sans-serif;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 26px;
+          color: #878787;
+          text-align: center;
+          width: 51%; }
+      body .main .section5-container__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px; }
+        body .main .section5-container__buttons-inp {
+          padding: 16px 24px 16px 24px;
+          background-color: #383838;
+          border: 1px solid #383838;
+          border-radius: 6px;
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #FFFFFF; }
+        body .main .section5-container__buttons-btn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          padding: 16px 24px 16px 24px;
+          background-color: #F14141;
+          border-radius: 6px;
+          font-family: 'Inter', sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          color: #FFFFFF; }
