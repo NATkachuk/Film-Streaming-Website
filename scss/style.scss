@@ -9,13 +9,6 @@ body{
     .header{
         padding: 40px 0px;
         @include flex(row, space-around, center, 0);
-        .logo{
-            &__link{
-                text-decoration: none;
-                color: $main-color;
-                @include Merriweather(32px, 700, 40px);
-            }
-        }
         .nav{
             &__list{
                 @include flex(row, center, center, 30px);
@@ -55,6 +48,13 @@ body{
                 border: 1px solid $secondary-color;
                 border-radius: 6px;
             }
+        }
+    }
+    .logo{
+        &__link{
+            text-decoration: none;
+            color: $main-color;
+            @include Merriweather(32px, 700, 40px);
         }
     }
     .main{
@@ -285,7 +285,8 @@ body{
         .section4{
             margin-top: 250px;
             @include flex(row, center, center, 64px);
-            .section4-box{
+            &-box{
+                @include flex(column, center, center, 56px);
                 &__textbox{
                     @include flex(column, center, flex-start, 24px);
                     &-title{
@@ -299,6 +300,34 @@ body{
                         width: 91%;
                     }
 
+                }
+                &__container{
+                    @include flex (column, center, center, 56px);
+                    background-image: url(../image/png/Contact.png);
+                    padding: 20px 0px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                   &-textbox{
+                       @include flex(column, center, center, 24px);
+                    &-text{
+                        @include Inter(24px, 600, 32px);
+                        color: $main-color;
+                        width: 50%;
+                    }
+                    &-text1{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        width: 61%;
+                        text-align: center;
+                    }
+                   }
+                    &-btn{
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-color;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
+                        border-radius: 6px;
+                    }
                 }
             }
             .section4-box1{
@@ -368,5 +397,70 @@ body{
                 }
             }
         }
+
+    }
+    .footer{
+        padding: 100px;
+        @include flex(column, center, center, 56px);
+        &-container{
+            @include flex(row, center, center, 56px);
+            .footer-box{
+                width: 44%;
+                @include flex(column, center, flex-start, 24px);
+                &__text{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;
+                    width: 87%;
+                }
+            }
+            .footer-box1{
+                @include flex(row, center, flex-start, 24px);
+                &__list{
+                    @include flex(column, center, flex-start, 24px);
+                    &-item{
+                        @include Inter(18px, 500, 26px);
+                    }
+                    &-link{
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+                }
+            }
+            .footer-box2{
+                @include flex(column, center, center, 16px);
+                &__text{
+                    @include Inter(18px, 600, 26px);
+                    color: $main-color;
+                }
+                &__socials{
+                    @include flex(row, center, center, 16px);
+                    &-link{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &-container1{
+            @include flex(row, space-between, center, 56px);
+            width: 100%;
+            padding-top: 32px;
+            border-top: 1px solid $border-color;
+            &__text{
+                @include Inter(18px, 500, 26px);
+                color: $nav-color;
+            }
+            &__textbox{
+                @include flex(row, center, center, 10px);
+                &-text1{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;;
+                }
+                &-text2{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;
+                }
+            }
+        }
+
     }
 }
