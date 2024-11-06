@@ -556,11 +556,183 @@ body{
                 }
             }
             .section3{
-                padding: 40px 16px;
+                margin-top: 0px;
+                padding: 40px 12px;
                 @include flex(column, center, center, 40px);
                 &-container1{
+                    @include flex(column, center, center, 56px);
                     &__title{
                         @include Inter(24px, 600, 32px);
+                    }
+                    &__box{
+                        @include flex(column, center, center, 24px);
+                        &-text{
+                            @include Inter(14px, 500, 20px);
+                            width: 100%;
+                        }
+                        &-button{
+                            padding: 12px 16px 12px 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+                &-container2{
+                    @include flex(column, center, center, 56px);
+                    &__box{
+                        @include flex(column, center, center, 24px);
+                        .section3-container2__textbox{
+                            @include flex(column, center, center, 24px);
+                            &-text1{
+                                @include Inter(24px, 500, 32px);
+                                width: 91%;
+                            }
+                            &-text2{
+                                @include Inter(14px, 500, 20px);
+                                width: 99%;
+                            }
+                        }
+                        .section3-container2__button{
+                            padding: 12px 16px 12px 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+                &-container3{
+                    @include flex(column, center, center, 56px);
+                    &__card{
+                        @include flex(column, center, flex-start, 24px);
+                        width: 100%;
+                        .section3-container3__text{
+                            @include Inter(18px, 500, 26px);
+                            color: $main-color;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .section4{
+                padding: 40px 0px;
+                @include flex(column, center, center, 40px);
+                margin-top: 0px;
+                &-box{
+                    @include flex(column, center, center, 56px);
+                    &__textbox{
+                        @include flex(column, center, center, 24px);
+                        &-title{
+                            @include Inter(24px, 600, 32px);
+                            width: 100%;
+                        }
+                        &-text{
+                            @include Inter(14px, 500, 20px);
+                            width: 100%;
+                        }
+                    }
+                    .section4-box__container{
+                        @include flex(column, center, center, 24px);
+                        &-textbox{
+                            @include flex(column, center, center, 24px);
+                            &-text{
+                                @include Inter(18px, 600, 26px);
+                                width: 100%;
+                                text-align: center
+                            }
+                            &-text1{
+                                @include Inter(14px, 500, 20px);
+                                width: 90%;
+                            }
+                        }
+                        &-btn{
+                            padding: 12px 16px 12px 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+                &-box1{
+                    @include flex(column, center, center, 56px);
+                    &__card{
+                        @include flex(column, center, flex-start, 24px);
+                        &-textbox{
+                            @include flex(column, center, center, 24px);
+                            &-title{
+                                @include Inter(18px, 600, 26px);
+                                color: $main-color;
+                            }
+                            &-text{
+                                @include Inter(14px, 500, 20px);
+                                color: $nav-color;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .section5{
+                margin-top: -100px;
+                @include flex(column, center, center, 40px);
+                &-container{
+                    @include flex(column, center, center, 56px);
+                    &__textbox{
+                        @include flex(column, center, center, 24px);
+                        &-title{
+                            @include Inter(24px, 600, 32px);
+                            width: 71%;
+                        }
+                        &-text{
+                            @include Inter(14px, 500, 20px);
+                            width: 96%;
+                        }
+                    }
+                    &__buttons{
+                        @include flex(column, center, center, 24px);
+                        width: 100%;
+                        &-inp{
+                            padding: 12px 16px 12px 16px;
+                            background-color: $border-color;
+                            border: 1px solid rgb(56, 56, 56);
+                            border-radius: 6px;
+                            @include Inter(16px, 500, 24px);
+                            color: $main-color;
+                            width: 100%;
+                        }
+                        &-btn{
+                            padding: 12px 16px 12px 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            margin-top: 0px;
+            padding: 40px 24px;
+            @include flex(column, center, center, 40px);
+            &-container{
+                @include flex(column, center, flex-start, 56px);
+                .footer-box {
+                    width: 100%;
+                    &__text {
+                        width: 100%;
+                    }
+                }
+                .footer-box1 {
+                    flex-direction: column;
+                }
+            }
+            &-container1{
+                @include flex(column, center, center, 56px);
+                &__text{
+                    @include Inter(14px, 500, 20px);
+                    color: $nav-color;
+                }
+                &__textbox{
+                    @include flex(row, center, center, 24px);
+                    &-text1{
+                        @include Inter(14px, 500, 20px);
+                        color: $nav-color;
+                    }
+                    &-text2{
+                        @include Inter(14px, 500, 20px);
+                        color: $nav-color;
                     }
                 }
             }
