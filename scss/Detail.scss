@@ -1,0 +1,260 @@
+@import './mixin';
+@import './vars';
+@import './reset';
+
+body{
+    color: $main-color;
+    background-color: $background-color;
+    .header{
+        padding: 40px 0px;
+        @include flex(row, space-around, center, 0);
+        .nav{
+            &__list{
+                @include flex(row, center, center, 30px);
+            }
+            &__item{
+                @include flex(row, center, center, 5px);
+            }
+            &__link{
+                text-decoration: none;
+                color: $nav-color;
+                @include Inter(16px, 600, 24px);
+            }
+            &__link:hover {
+                color: $main-color;
+                background:#606060;
+                padding: 4px 8px;
+            }
+        }
+        .reges{
+            @include flex(row, center, center, 30px);
+            &-search{
+                border-radius:8px;
+                padding: 16px;
+                border:1px solid $border-color;
+            }
+            &__button1{
+                padding: 16px 24px 16px 24px;
+                background-color: $secondary-color;
+                border-radius: 6px;
+                @include Inter(16px, 600, 24px);
+                &-link{
+                    text-decoration: none;
+                    color: $main-color;
+                    @include Inter(16px, 600, 24px);
+                }
+            }
+            &__button2{
+                padding: 16px 24px 16px 24px;
+                @include Inter(16px, 600, 24px);
+                color: $main-color;
+                border: 1px solid $secondary-color;
+                border-radius: 6px;
+            }
+        }
+        &__burger {
+            display: none;
+        }
+    }
+    .logo{
+        &__link{
+            text-decoration: none;
+            color: $main-color;
+            @include Merriweather(32px, 700, 40px);
+        }
+    }
+    .button1{
+        padding: 16px 24px 16px 24px;
+        background-color: $secondary-color;
+        border-radius: 6px;
+        @include Inter(16px, 600, 24px);
+        &-link{
+            text-decoration: none;
+            color: $main-color;
+            @include Inter(16px, 600, 24px);
+        }
+    }
+    .button2 {
+        @include flex(row, center, center, 12px);
+        padding: 16px 24px 16px 24px;
+        @include Inter(16px, 600, 24px);
+        color: $main-color;
+        background-color: $secondary-bg-color;
+        border-radius: 6px;
+    }
+    .main {
+        .section1{
+            @include flex(row, center, center, 0);
+            &-wrapper{
+                @include flex(column, center, flex-start, 64px);
+                padding-left: 18px;
+                .section1-container{
+                    @include flex(column, center, flex-start, 24px);
+                    &__textbox{
+                        @include flex(column, center, flex-start, 24px);
+                        margin-right: -400px;
+                        z-index: 1;
+                        &-title{
+                            @include Inter(48px, 600, 56px);
+                            color: $main-color;
+                        }
+                        &-text{
+                            @include Inter(18px, 500, 26px);
+                            color: $nav-color;
+                            width: 71%;
+                        }
+                    }
+                    &__buttons{
+                        @include flex(row, flex-start, center, 24px);
+                    }
+                }
+            }
+        }
+        .section2{
+            @include flex(column, center, center, 40px);
+            padding-top: 250px;
+            &-container1{
+                @include flex(column, center, center, 56px);
+                width: 100%;
+                .section2-box1{
+                    @include flex(column, center, center, 12px);
+                    &__title{
+                        @include Inter(48px, 600, 56px);
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                    }
+                }
+                .section2-box2{
+                    @include flex(row, space-between, center, 12px);
+                    width: 100%;
+                    &__cont1{
+                        @include flex(row, center, center, 12px);
+                        background-color: $secondary-bg-color;
+                        padding: 16px 24px;
+                        &-text{
+                            @include Inter(18px, 500, 26px);
+                        }
+                    }
+                    &__cont2{
+                        @include flex(row, center, center, 12px);
+                        background-color: $secondary-bg-color;
+                        padding: 16px 24px;
+                        &-text{
+                            @include Inter(18px, 500, 26px);
+                        }
+                    }
+
+                }
+            }
+            &-container2{
+                @include flex(column, center, center, 15px);
+                .section2-box{
+                    @include flex(column, center, center, 56px);
+                    .section2-card{
+                        @include flex(row, center, center, 56px);
+                        &__textbox{
+                            @include flex(column, center, flex-start, 12px);
+                            &-title{
+                                @include Inter(32px, 600, 40px);
+                                width: 75%;
+                            }
+                            &-box{
+                                @include flex(row, center, center, 12px);
+                                &-text{
+                                    @include Inter(18px, 500, 26px);
+                                }
+                                &-btn{
+                                    @include flex(row, center, center, 12px);
+                                    padding: 6px 16px ;
+                                    background-color: $secondary-bg-color;
+                                    @include Inter(16px, 600, 24px)
+                                }
+                            }
+                            &-text{
+                                @include Inter(18px, 500, 26px);
+                                color: $nav-color;
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+                &__btn{
+                    margin-top: 56px;
+                    @include flex(row, center, center, 12px);
+                    padding: 16px 24px 16px 24px;
+                    background-color: $secondary-color;
+                    @include Inter(16px, 600, 24px);
+                    color: $main-color;
+                    border-radius: 6px;
+                    width: 22%;
+                }
+            }
+        }
+
+    }
+    .footer{
+        padding: 100px;
+        @include flex(column, center, center, 56px);
+        &-container{
+            @include flex(row, center, center, 56px);
+            .footer-box{
+                width: 44%;
+                @include flex(column, center, flex-start, 24px);
+                &__text{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;
+                    width: 87%;
+                }
+            }
+            .footer-box1{
+                @include flex(row, center, flex-start, 24px);
+                &__list{
+                    @include flex(column, center, flex-start, 24px);
+                    &-item{
+                        @include Inter(18px, 500, 26px);
+                    }
+                    &-link{
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+                }
+            }
+            .footer-box2{
+                @include flex(column, center, center, 16px);
+                &__text{
+                    @include Inter(18px, 600, 26px);
+                    color: $main-color;
+                }
+                &__socials{
+                    @include flex(row, center, center, 16px);
+                    &-link{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &-container1{
+            @include flex(row, space-between, center, 56px);
+            width: 100%;
+            padding-top: 32px;
+            border-top: 1px solid $border-color;
+            &__text{
+                @include Inter(18px, 500, 26px);
+                color: $nav-color;
+            }
+            &__textbox{
+                @include flex(row, center, center, 10px);
+                &-text1{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;;
+                }
+                &-text2{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;
+                }
+            }
+        }
+    }
+}
