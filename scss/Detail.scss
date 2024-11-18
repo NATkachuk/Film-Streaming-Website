@@ -192,7 +192,210 @@ body{
                 }
             }
         }
+        .section3{
+            @include flex(column, center, center, 56px);
+            &__title{
+                padding-top: 160px;
+                @include Inter(48px, 600, 56px);
+                text-align: center;
+                width: 57%;
+            }
+            &-container{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                .section3-box1{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 1.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box2{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card2.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box3{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 3.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box4{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 4.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box5{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 5.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box6{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 6.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box7{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 7.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box8{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 8.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+                .section3-box9{
+                    padding: 380px 24px 24px 24px;
+                    background-image: url(../image/png/card\ 9.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    @include flex(column, flex-end, center, 20px);
+                    &__title{
+                        @include Inter(24px, 600, 32px);
+                        text-align: center;
+                    }
+                    &__text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .section4{
+            padding-top: 250px;
+            padding-bottom: 120px;
+            @include flex(column, center, center, 40px);
+            background-image: url(../image/png/space-back.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-container{
+                @include flex(column, center, center, 40px);
+                &__textbox{
+                    @include flex(column, center, center, 24px);
+                    &-title{
+                        @include Inter(48px, 600, 56px);
+                        color: $main-color;
+                        text-align: center;
+                        width: 61%;
+                    }
+                    &-text{
+                        @include Inter(18px, 500, 26px);
+                        color: $nav-color;
+                        text-align: center;
+                        width: 51%;
+                    }
+                }
 
+                &__buttons{
+                    @include flex(row, center, center, 8px);
+                    &-inp{
+                        padding: 16px 24px 16px 24px;
+                        background-color: $border-color;
+                        border: 1px solid rgb(56, 56, 56);
+                        border-radius: 6px;
+                        @include Inter(16px, 500, 24px);
+                        color: $main-color;
+                    }
+                    &-btn{
+                        @include flex(row, center, center, 10px);
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-color;
+                        border-radius: 6px;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
+                    }
+                }
+            }
+        }
     }
     .footer{
         padding: 100px;
@@ -253,6 +456,181 @@ body{
                 &-text2{
                     @include Inter(18px, 500, 26px);
                     color: $nav-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        .header {
+            .nav {
+                display: none;
+            }
+            .reges {
+                display: none;
+            }
+            &__burger {
+                display: block;
+            }
+        }
+        .main{
+            .section1{
+                @include flex(column, center, center, 40px);
+                &-wrapper{
+                    padding:0px 9px;
+                    @include flex(column, center, center, 40px);
+                    .section1-container{
+                        &__textbox{
+                            margin-right: 0px;
+                            &-title{
+                                @include Inter(24px, 600, 32px);
+                            }
+                            &-text{
+                                @include Inter(14px, 500, 20px);
+                                width: 100%;
+                            }
+                        }
+                        &__buttons{
+                            @include flex(column, center, center, 24px);
+                            width: 100%;
+                            &-button1{
+                                padding: 12px 16px 12px 16px;
+                                width: 100%;
+                            }
+                            &-button2{
+                                padding: 12px 16px 12px 16px;
+                                width: 100%;
+                            }
+                            &-button3{
+                                padding: 12px 16px 12px 16px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .section2{
+                padding-top: 80px;
+                &-container1{
+                    .section2-box1{
+                        &__title{
+                            @include Inter(24px, 600, 32px);
+                        }
+                    }
+                    .section2-box2{
+                        flex-direction: column;
+                        &__cont1{
+                            padding: 12px 16px;
+                            width: 100%;
+                            &-text{
+                                @include Inter(14px, 500, 20px);
+                            }
+                        }
+                        &__cont2{
+                            width: 100%;
+                            padding: 12px 16px;
+                            &-text{
+                                @include Inter(14px, 500, 20px);
+                            }
+                        }
+                    }
+                }
+                &-container2{
+                    .section2-box{
+                        .section2-card{
+                            flex-direction: column;
+                            &__textbox{
+                                &-text{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    &__btn{
+                        width: 100%;
+                    }
+                }
+            }
+            .section3{
+                &__title{
+                    @include Inter(24px, 600, 32px);
+                    width: 100%;
+                }
+                &-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+            .section4{
+                margin-top: -100px;
+                @include flex(column, center, center, 40px);
+                &-container{
+                    @include flex(column, center, center, 56px);
+                    &__textbox{
+                        @include flex(column, center, center, 24px);
+                        &-title{
+                            @include Inter(24px, 600, 32px);
+                            width: 71%;
+                        }
+                        &-text{
+                            @include Inter(14px, 500, 20px);
+                            width: 96%;
+                        }
+                    }
+                    &__buttons{
+                        @include flex(column, center, center, 24px);
+                        width: 100%;
+                        &-inp{
+                            padding: 12px 16px 12px 16px;
+                            background-color: $border-color;
+                            border: 1px solid rgb(56, 56, 56);
+                            border-radius: 6px;
+                            @include Inter(16px, 500, 24px);
+                            color: $main-color;
+                            width: 100%;
+                        }
+                        &-btn{
+                            padding: 12px 16px 12px 16px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            margin-top: 0px;
+            padding: 40px 24px;
+            @include flex(column, center, center, 40px);
+            &-container{
+                @include flex(column, center, flex-start, 56px);
+                .footer-box {
+                    width: 100%;
+                    &__text {
+                        width: 100%;
+                    }
+                }
+                .footer-box1 {
+                    flex-direction: column;
+                }
+            }
+            &-container1{
+                @include flex(column, center, center, 56px);
+                &__text{
+                    @include Inter(14px, 500, 20px);
+                    color: $nav-color;
+                }
+                &__textbox{
+                    @include flex(row, center, center, 24px);
+                    &-text1{
+                        @include Inter(14px, 500, 20px);
+                        color: $nav-color;
+                    }
+                    &-text2{
+                        @include Inter(14px, 500, 20px);
+                        color: $nav-color;
+                    }
                 }
             }
         }
