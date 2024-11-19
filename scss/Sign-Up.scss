@@ -1,0 +1,86 @@
+@import './mixin';
+@import './vars';
+@import './reset';
+
+body{
+    color: $main-color;
+    background-color: $background-color;
+
+    .main{
+        .logo{
+            &__link{
+                text-decoration: none;
+                color: $main-color;
+                @include Merriweather(32px, 700, 40px);
+            }
+        }
+        .section1{
+            @include flex(column, center, center, 24px);
+            padding: 200px 0px;
+            &-textbox{
+                @include flex(column, center, center, 24px);
+                &__title{
+                    @include Inter(40px, 600, 48px);
+                    width: 69%;
+                  
+                }
+                &__text{
+                    @include Inter(18px, 500, 26px);
+                    color: $nav-color;
+                    width: 71%;
+                }
+            }
+            .form{
+                @include flex(column, center, flex-start, 24px);
+                &__label{
+                    @include flex(column, center, flex-start, 8px);
+                    &-text{
+                        @include Inter(16px, 500, 24px);
+                    }
+                    &--span{
+                        @include Inter(16px, 500, 24px);
+                        color: $secondary-color;
+                    }
+                    &-inp{
+                        width: 100%;
+                        border: 1px solid $border-color;
+                        border-radius: 4px;
+                        padding : 16px;
+                        @include Inter(16px, 500, 24px);
+                    }   
+                }
+                &__buttons{
+                    @include flex(column, center, center, 12px);
+                    &-btn1{
+                        @include flex(row, center, center, 10px);
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-color;
+                        border-radius: 6px;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
+                        width: 100%;
+                    }
+                    &-btn2{
+                        @include flex(row, center, center, 10px);
+                        padding: 16px 24px 16px 24px;
+                        background-color: $secondary-bg-color;
+                        border-radius: 6px;
+                        @include Inter(16px, 600, 24px);
+                        color: $main-color;
+                        width: 100%;
+                    }
+                }
+                &__link{
+                    @include flex(row, center, center, 10px);
+                    &-text{
+                        @include Inter(16px, 500, 24px);
+                        &-link{
+                            @include Inter(16px, 500, 24px);
+                            color: $secondary-color;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}
