@@ -46,10 +46,13 @@ body{
             }
             &__button2{
                 padding: 16px 24px 16px 24px;
-                @include Inter(16px, 600, 24px);
-                color: $main-color;
                 border: 1px solid $secondary-color;
                 border-radius: 6px;
+                &-link {
+                    text-decoration: none;
+                    color: $main-color;
+                    @include Inter(16px, 600, 24px);
+                }
             }
         }
         &__burger {

@@ -22,12 +22,14 @@ body{
                 &__title{
                     @include Inter(40px, 600, 48px);
                     width: 69%;
+                    text-align: center;
                   
                 }
                 &__text{
                     @include Inter(18px, 500, 26px);
                     color: $nav-color;
                     width: 71%;
+                    text-align: center;
                 }
             }
             .form{

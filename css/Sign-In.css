@@ -146,6 +146,7 @@ body .main .section1-textbox__title {
   font-weight: 600;
   line-height: 48px;
   width: 69%;
+  text-align: center;
 }
 body .main .section1-textbox__text {
   font-family: "Inter", sans-serif;
@@ -154,6 +155,7 @@ body .main .section1-textbox__text {
   line-height: 26px;
   color: #878787;
   width: 71%;
+  text-align: center;
 }
 body .main .section1 .form {
   display: -webkit-box;

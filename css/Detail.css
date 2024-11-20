@@ -200,13 +200,16 @@ body .header .reges__button1-link {
 }
 body .header .reges__button2 {
   padding: 16px 24px 16px 24px;
+  border: 1px solid #F14141;
+  border-radius: 6px;
+}
+body .header .reges__button2-link {
+  text-decoration: none;
+  color: #FFFFFF;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
-  color: #FFFFFF;
-  border: 1px solid #F14141;
-  border-radius: 6px;
 }
 body .header__burger {
   display: none;
