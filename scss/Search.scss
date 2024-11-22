@@ -289,16 +289,70 @@ body{
 @media screen and (max-width: 375px) {
     body{
         .header {
-            .nav {
+            @include flex(row, space-around, center, 0px);
+            .header-burger {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              }
+              
+              .header-burger__img {
+                width: 35px;
+                height: 35px;
+                margin-right: 20px;
+              }
+              
+              .header-burger__img.krest {
+                content: url("../image/svg/close-square.svg");
+                width: 35px;
+                height: 35px;
+              }
+              
+              .nav {
                 display: none;
-            }
-            .reges {
+              }
+              
+              .nav.open {
+                display: flex;
+                flex-direction: column;
+              }
+              .nav__list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 100px;
+                right: 118px; /* adjust this value to position the menu to the left of the krest icon */
+                flex-direction: column;
+                align-items: flex-start;
+              }
+              
+              .nav__item {
+                margin-bottom: 10px;
+              }
+              
+              .nav__link {
+                text-decoration: none;
+              }
+              
+              .reges {
                 display: none;
-            }
-            &__burger {
-                display: block;
-            }
+              }
+              .reges-active {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  position: absolute;
+                  top: 400px;
+                  right: 100px;
+              }
+
         }
+        .backround {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+          }
         .main{
             .section1{
                 &__label{
