@@ -1359,12 +1359,16 @@ body .footer-container1__textbox-text2 {
     color: #FFFFFF;
   }
   body .main .section2-box1__card-textbox-text {
+    display: none;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     color: #878787;
     width: 100%;
+  }
+  body .main .section2-box1__card-textbox-img {
+    display: none;
   }
   body .main .section3 {
     margin-top: -100px;

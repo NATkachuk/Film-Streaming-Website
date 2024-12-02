@@ -498,9 +498,13 @@ body{
                                 color: $main-color;
                             }
                             &-text{
+                                display: none;
                                 @include Inter(14px, 500, 20px);
                                 color: $nav-color;
                                 width: 100%;
+                            }
+                            &-img {
+                                display: none;
                             }
                         }
                     }

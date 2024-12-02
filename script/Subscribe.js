@@ -1,6 +1,6 @@
-const plusIcons = document.querySelectorAll('.section4-box1__card-textbox-img');
-const textElements = document.querySelectorAll('.section4-box1__card-textbox-text');
-const minusIcons = document.querySelectorAll('.section4-box1__card-textbox-img2');
+const plusIcons = document.querySelectorAll('.section2-box1__card-textbox-img2');
+const textElements = document.querySelectorAll('.section2-box1__card-textbox-text');
+const minusIcons = document.querySelectorAll('.section2-box1__card-textbox-img');
 
 plusIcons.forEach((icon, index) => {
   icon.addEventListener('click', () => {
