@@ -302,6 +302,15 @@ body{
                 padding: 24px;
                 &__card{
                     @include flex(row, center, center, 24px);
+                    &--more-gap {
+                        gap: 183px;
+                    }
+                    &--more-gap2 {
+                        gap: 100px;
+                    }
+                    &--more-gap5 {
+                        gap: 140px;
+                    }
                     &-textbox{
                         @include flex(column, center, flex-start, 24px);
                         &-title{
@@ -676,6 +685,15 @@ body{
                 }
                 &-box1{
                     @include flex(column, center, center, 56px);
+                    .section4-box1__card--more-gap {
+                        gap: 20px;
+                    }
+                    .section4-box1__card--more-gap2 {
+                        gap: 20px;
+                    }
+                    .section4-box1__card--more-gap5 {
+                        gap: 20px;
+                    }
                     &__card{
                         @include flex(column, center, flex-start, 24px);
                         &-textbox{

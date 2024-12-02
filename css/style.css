@@ -933,6 +933,15 @@ body .main .section4 .section4-box1__card {
           align-items: center;
   gap: 24px;
 }
+body .main .section4 .section4-box1__card--more-gap {
+  gap: 183px;
+}
+body .main .section4 .section4-box1__card--more-gap2 {
+  gap: 100px;
+}
+body .main .section4 .section4-box1__card--more-gap5 {
+  gap: 140px;
+}
 body .main .section4 .section4-box1__card-textbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1869,6 +1878,15 @@ body .footer-container1__textbox-text2 {
         -ms-flex-align: center;
             align-items: center;
     gap: 56px;
+  }
+  body .main .section4-box1 .section4-box1__card--more-gap {
+    gap: 20px;
+  }
+  body .main .section4-box1 .section4-box1__card--more-gap2 {
+    gap: 20px;
+  }
+  body .main .section4-box1 .section4-box1__card--more-gap5 {
+    gap: 20px;
   }
   body .main .section4-box1__card {
     display: -webkit-box;
